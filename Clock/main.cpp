@@ -2,14 +2,14 @@
 int main(int argc, char **argv)
 {
     Clock naiyuan(0, 0, 3);
-    naiyuan.show();
+    cout << naiyuan;
     naiyuan.update(2);
-    naiyuan.show();
+    cout << naiyuan;
     
     Clock ha = Clock(0, 0, 3);
-    ha.show();
+    cout << ha;
     ha = 3 * ha;
-    ha.show();
+    cout << ha;
  //   (ha + naiyuan).show();
     
     return 0;

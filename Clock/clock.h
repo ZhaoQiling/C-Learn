@@ -1,6 +1,8 @@
 //#pragma once
 #ifndef _CLOCK_H_
 #define _CLOCK_H_
+#include <iostream>
+using namespace std;
 class Clock
 {
 private:
@@ -17,5 +19,6 @@ public:
     void show();
     Clock operator +(const Clock & c);
     friend Clock operator*(int, const Clock &);
+    friend ostream& operator<<(ostream& os, Clock c);
 };
 #endif

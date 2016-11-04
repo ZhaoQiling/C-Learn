@@ -80,3 +80,9 @@ using namespace std;
         t.update(0);
         return t;
     }
+    
+    ostream& operator<<(ostream& os, Clock c)
+    {
+        os << c.hour_ << ":" << c.min_ << ":" << c.sec_ << endl;
+        return os;
+    }
